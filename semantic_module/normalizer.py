@@ -4,7 +4,7 @@ Normalization utilities for objects and relations.
 Narrative Driven Scene Reconstruction - consistent naming and relation mapping.
 """
 
-from config import OBJECT_MAP, ABSTRACT_OBJECTS, RELATION_MAP, VALID_RELATIONS
+from .config import OBJECT_MAP, ABSTRACT_OBJECTS, RELATION_MAP, VALID_RELATIONS
 
 
 def normalize_object(name):

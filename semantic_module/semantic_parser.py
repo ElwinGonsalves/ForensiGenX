@@ -7,9 +7,9 @@ Narrative Driven Scene Reconstruction - main pipeline.
 import json
 import os
 
-from config import MAX_OBJECTS_PER_SCENE
-from normalizer import normalize_object, normalize_relation
-from validator import validate_scene
+from .config import MAX_OBJECTS_PER_SCENE
+from .normalizer import normalize_object, normalize_relation
+from .validator import validate_scene
 
 
 def load_linguistic_features(filepath):
@@ -87,9 +87,19 @@ def parse_relation(rel_str):
     tokens = rel_str.strip().split()
     if len(tokens) < 3:
         return None
-    subject = tokens[0]
-    relation = tokens[1]
-    obj = tokens[2]
+    # Find token index corresponding to a valid relation (after normalization)
+    rel_idx = None
+    for i, t in enumerate(tokens):
+        can = normalize_relation(t)
+        if can is not None:
+            rel_idx = i
+            relation_token = t
+            break
+    if rel_idx is None or rel_idx == 0 or rel_idx == len(tokens) - 1:
+        return None
+    subject = " ".join(tokens[:rel_idx])
+    relation = relation_token
+    obj = " ".join(tokens[rel_idx + 1 :])
     return (subject, relation, obj)
 
 

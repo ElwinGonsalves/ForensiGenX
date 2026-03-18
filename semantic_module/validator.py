@@ -4,7 +4,7 @@ Scene graph validation.
 Narrative Driven Scene Reconstruction - structural and referential integrity checks.
 """
 
-from config import VALID_RELATIONS
+from .config import VALID_RELATIONS
 
 
 def validate_scene(scene_graph):

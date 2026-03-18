@@ -23,6 +23,12 @@ OBJECT_MAP = {
 
     "pistol": "gun",
     "revolver": "gun",
+    "police officer": "officer",
+    "officer": "officer",
+    "suspect": "suspect",
+    "black car": "car",
+    "convenience store": "store",
+    "light": "street light",
 }
 
 # Abstract / useless objects to filter out (dataset artifacts)
@@ -41,7 +47,7 @@ ABSTRACT_OBJECTS = {
 }
 
 # Maximum objects per scene for layout engine
-MAX_OBJECTS_PER_SCENE = 6
+MAX_OBJECTS_PER_SCENE = 12
 
 # Canonical spatial relation mapping: variant forms -> canonical form
 RELATION_MAP = {
