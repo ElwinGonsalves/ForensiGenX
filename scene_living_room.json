@@ -1,0 +1,34 @@
+{
+  "objects": [
+    { "id": "sofa", "name": "Two-seater sofa" },
+    { "id": "television", "name": "Wall-mounted television" },
+    { "id": "coffee_table", "name": "Glass coffee table" },
+    { "id": "floor_lamp", "name": "Standing floor lamp" },
+    { "id": "bookshelf", "name": "Small wooden bookshelf" },
+    { "id": "victim", "name": "Victim (adult male, supine)" },
+    { "id": "knife", "name": "Kitchen knife (18cm)" },
+    { "id": "glass_whiskey", "name": "Drinking glass (whiskey, partial)" },
+    { "id": "glass_empty", "name": "Drinking glass (empty)" },
+    { "id": "mobile_phone", "name": "Mobile phone" },
+    { "id": "coaster", "name": "Broken ceramic coaster" },
+    { "id": "shoe_impression", "name": "Shoe impressions (size 9-10)" },
+    { "id": "blood_pool", "name": "Blood pool" }
+  ],
+  "relationships": [
+    ["television", "above", "sofa"],
+    ["coffee_table", "near", "sofa"],
+    ["floor_lamp", "near", "sofa"],
+    ["bookshelf", "right_of", "sofa"],
+    ["victim", "near", "coffee_table"],
+    ["victim", "near", "sofa"],
+    ["victim", "on", "floor"],
+    ["knife", "near", "victim"],
+    ["knife", "right_of", "victim"],
+    ["glass_whiskey", "on", "coffee_table"],
+    ["glass_empty", "on", "coffee_table"],
+    ["coaster", "on", "coffee_table"],
+    ["mobile_phone", "near", "sofa"],
+    ["shoe_impression", "in", "blood_pool"],
+    ["blood_pool", "under", "victim"]
+  ]
+}

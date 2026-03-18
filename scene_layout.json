@@ -1,0 +1,108 @@
+{
+  "objects": [
+    {
+      "id": "sofa",
+      "name": "Two-seater sofa",
+      "x": 365,
+      "y": 250,
+      "w": 100,
+      "h": 100
+    },
+    {
+      "id": "television",
+      "name": "Wall-mounted television",
+      "x": 390,
+      "y": 20,
+      "w": 100,
+      "h": 100
+    },
+    {
+      "id": "coffee_table",
+      "name": "Glass coffee table",
+      "x": 124,
+      "y": 202,
+      "w": 100,
+      "h": 100
+    },
+    {
+      "id": "floor_lamp",
+      "name": "Standing floor lamp",
+      "x": 522,
+      "y": 227,
+      "w": 40,
+      "h": 160
+    },
+    {
+      "id": "bookshelf",
+      "name": "Small wooden bookshelf",
+      "x": 612,
+      "y": 245,
+      "w": 100,
+      "h": 100
+    },
+    {
+      "id": "victim",
+      "name": "Victim (adult male, supine)",
+      "x": 412,
+      "y": 361,
+      "w": 100,
+      "h": 100
+    },
+    {
+      "id": "knife",
+      "name": "Kitchen knife (18cm)",
+      "x": 273,
+      "y": 288,
+      "w": 40,
+      "h": 30
+    },
+    {
+      "id": "glass_whiskey",
+      "name": "Drinking glass (whiskey, partial)",
+      "x": 268,
+      "y": 20,
+      "w": 100,
+      "h": 100
+    },
+    {
+      "id": "glass_empty",
+      "name": "Drinking glass (empty)",
+      "x": 118,
+      "y": 71,
+      "w": 100,
+      "h": 100
+    },
+    {
+      "id": "mobile_phone",
+      "name": "Mobile phone",
+      "x": 343,
+      "y": 131,
+      "w": 100,
+      "h": 100
+    },
+    {
+      "id": "coaster",
+      "name": "Broken ceramic coaster",
+      "x": 222,
+      "y": 131,
+      "w": 100,
+      "h": 100
+    },
+    {
+      "id": "shoe_impression",
+      "name": "Shoe impressions (size 9-10)",
+      "x": 649,
+      "y": 459,
+      "w": 100,
+      "h": 100
+    },
+    {
+      "id": "blood_pool",
+      "name": "Blood pool",
+      "x": 390,
+      "y": 480,
+      "w": 100,
+      "h": 100
+    }
+  ]
+}
